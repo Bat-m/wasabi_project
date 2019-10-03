@@ -1,0 +1,145 @@
+/* The switch - the box around the slider */
+.switch {
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+  width: 67px;
+  height: 39px;
+  top: 0px;
+  -moz-user-select: none;
+  /* Firefox */
+  -webkit-user-select: none;
+  /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none;
+  /* Internet explorer depuis la version 10 et Edge */
+  user-select: none;
+}
+
+.barre {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffffa1;
+  margin: 6px 0;
+  top: -16px;
+  position: relative;
+  left: 9px;
+}
+
+.test {
+  visibility: visible;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgb(149, 16, 16); */
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  bottom: 5px;
+  border: 7px solid white;
+  background-color: #fcbfaa;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider:before {
+  /* -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px); */
+  background-color: #84b96c;
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
+}
+
+.slider.round:before {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+
+  #foo,
+  #titre,
+  .linker {
+    visibility: visible;
+
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background: #464241;
+    height: 40px;
+  }
+
+  .switch {
+    visibility: visible;
+    -moz-user-select: none;
+    /* Firefox */
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none;
+    /* Internet explorer depuis la version 10 et Edge */
+    user-select: none;
+  }
+
+  #foo {
+    visibility: hidden;
+
+  }
+
+  header.size {
+    height: 80px;
+  }
+
+  li.linker.move {
+
+    margin-top: 50px;
+  }
+
+  #titre {
+    position: relative;
+
+    right: -45px;
+
+    top: -16px;
+  }
+
+  li.linker:nth-child(2),
+  li.linker:nth-child(3),
+  li.linker:nth-child(4) {
+    position: relative;
+
+    right: 118px;
+  }
+
+}

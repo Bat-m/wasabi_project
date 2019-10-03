@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wasabi Coffee </title>
+    <link href="./style/navfooter.css" type="text/css" rel="stylesheet">
+    <link href="./style/style.css" type="text/css" rel="stylesheet">
+    <link href="./style/burger.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ----- menu burger ----- -->
+    <header id="test">
+        <ul id="foo">
+            <li id="titre">
+                <h1><a href="index.php">WASABI</a></h1>
+            </li>
+            <li class="linker"><a href="index.php">A la carte </a></li>
+            <li class="linker"><a href="../Pages_restaurant/page_restaurant.php">Le restaurant</a> </li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" onclick="return toggle();">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <section>
+        <h1>WASABI Café</h1>
+        <h2>A LA CARTE :</h2>
+        <div class="container">
+            <div class="block-container">
+                <section class="block un">
+                    <div id="un" class="block-image un">
+                        <div class="my-text" id="priceOne">
+                            Menu nagoya <button ><i  class="arrow down"></i ></button></div>
+                    </div>
+                    <div class="block-text">Le Wasabi Café, vous propose ses menu nagoya.</div>
+                </section>
+                <section class="block deux">
+                    <div class="block-image deux">
+                        <div class="my-text" id="priceTwo">Menu sushi et sashimi<button><i class="arrow down"></i></button></div>
+                    </div>
+
+                    <!-- <button class="trigger">Commander</button> -->
+
+                    <div class="block-text">Le Wasabi Café, vous propose ses menu sushi et sashimi.</div>
+                </section>
+            </div>
+            <div class="block-container">
+
+                <section class="block trois">
+                    <div class="block-image trois">
+                        <div class="my-text" id="priceThree">Menu chirashi<button><i class="arrow down"></i></button></div>
+                    </div>
+
+                    <div class="block-text">Le Wasabi Café, vous propose ses menu chirashi.</div>
+                </section>
+                <section class="block quatre">
+                    <div class="block-image quatre">
+                        <div class="my-text" id="priceFour">Les sushis<button><i class="arrow down"></i></button></div>
+
+                    </div>
+
+                    <div class="block-text">Le Wasabi Café, vous propose ses sushi.</div>
+                </section>
+            </div>
+            <div class="block-container">
+                <section class="block cinq">
+                    <div class="block-image cinq">
+                        <div class="my-text" id="priceFive">Les makis<button><i class="arrow down"></i></button></div>
+
+                    </div>
+
+                    <div class="block-text">Le Wasabi Café, vous propose ses makis.</div>
+                </section>
+                <section class="block six">
+                    <div class="block-image six">
+                        <div class="my-text" id="priceSix">Les yakitoris<button><i class="arrow down"></i></button></div>
+
+                    </div>
+
+                    <div class="block-text">Le Wasabi Café, vous propose ses yakitoris.</div>
+                </section>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <form class="pure-form">
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1-2" placeholder="Username">
+                        <input type="email" class="pure-input-1-2" placeholder="Email">
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1-2" placeholder="A title">
+                        <textarea class="pure-input-1-2" placeholder="Textareas work too"></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="pure-button">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">Contact@wasabicafe.fr</a></li>
+            <li><a href="#">36 30 36 30</a></li>
+            <li><a href="#">Voir plan d'accès</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="index.php">A la carte</a></li>
+            <li><a href="../Pages_restaurant/page_restaurant.php">Le restaurant</a></li>
+        </ul>
+    </footer>
+    <script src="./style/burger.js"></script>
+    <script src="./style/modal.js"></script>
+ 
+
+</body>
+
+</html>
