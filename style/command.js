@@ -4,11 +4,11 @@ let closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
-    console.log('toggle');
+    console.log(trigger.length)
 }
 
 function windowOnClick(event) {
-    console.log('window');
+
     if (event.target === modal) {
         toggleModal();
     }

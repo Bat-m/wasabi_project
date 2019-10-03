@@ -25,7 +25,8 @@ for (let i = 0; i < buton.length; i++) {
     //creation de div et button
     div[i] = document.createElement("div");
     command[i] = document.createElement("button");
-    //event sur chaque element clicable
+    
+    //function event sur chaque element clicable
     buton[i].addEventListener('click', event => {
         block[i] = document.getElementById('block');
         var a = event.target
@@ -34,7 +35,7 @@ for (let i = 0; i < buton.length; i++) {
             block[i].style.marginBottom = '95px';
             blockImage[i].classList.add('size');
             down[i].classList.add('rotate');
-            command[i].classList.add('trigger');
+            command[i].classList.add('trigger');//a renommer
             command[i].innerHTML="Commander";
             div[i].id = "price";
             div[i].className = "pricer";
